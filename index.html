@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Michael Marrin, Life Coach</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" type="text/css">
+  <style>
+    .bd-placeholder-img {font-size: 1.125rem; text-anchor: middle; -webkit-user-select: none; -moz-user-select: none; user-select: none;}
+    @media (min-width: 768px) {.bd-placeholder-img-lg {font-size: 3.5rem;}}
+    .b-example-divider {width: 100%; height: 3rem; background-color: rgba(0, 0, 0, .1); border: solid rgba(0, 0, 0, .15); border-width: 1px 0; box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);}
+    .b-example-vr {flex-shrink: 0; width: 1.5rem; height: 100vh;}
+    .bi {vertical-align: -.125em; fill: currentColor;}
+    .nav-scroller {position: relative; z-index: 2; height: 2.75rem; overflow-y: hidden;}
+    .nav-scroller .nav {display: flex; flex-wrap: nowrap; padding-bottom: 1rem; margin-top: -1px; overflow-x: auto; text-align: center; white-space: nowrap; -webkit-overflow-scrolling: touch;}
+    .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;}
+    .bd-mode-toggle {z-index: 1500;}
+    .bd-mode-toggle .dropdown-menu .active .bi {display: block !important;}
+    @media (min-width: 992px) {.rounded-lg-3 { border-radius: .3rem; }}
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="award" viewBox="0 0 16 16">
+      <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+      <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+    </symbol>
+    <symbol id="life" viewBox="0 0 16 16">
+        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m6.43-5.228a7.03 7.03 0 0 1-3.658 3.658l-1.115-2.788a4 4 0 0 0 1.985-1.985zM5.228 14.43a7.03 7.03 0 0 1-3.658-3.658l2.788-1.115a4 4 0 0 0 1.985 1.985zm9.202-9.202-2.788 1.115a4 4 0 0 0-1.985-1.985l1.115-2.788a7.03 7.03 0 0 1 3.658 3.658m-8.087-.87a4 4 0 0 0-1.985 1.985L1.57 5.228A7.03 7.03 0 0 1 5.228 1.57zM8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+    </symbol>
+    <symbol id="cash" viewBox="0 0 16 16">
+      <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+      <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z"/>
+    </symbol>
+    <symbol id="email" viewBox="0 0 16 16">
+      <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+      <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+    </symbol>
+    <symbol id="map" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.5.5 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"/>
+    </symbol>
+    <symbol id="phone" viewBox="0 0 16 16">
+      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+    </symbol>
+  </svg>
+  <main>
+    <div class="container col-xl-10 col-xxl-8 px-4 py-1">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Michael Marrin,<br><small class="text-info">LIFE COACH</small></h1>
+          <p class="col-lg-10 fs-5">"The definition of insanity is doing the same thing over and over again and expecting different results."</p>
+          <p class="lead mb-1">- Albert Einstein</p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <img class="d-block mx-auto mb-4" src="image/mike.png" width="65%" height="65%" style="float: left">
+        </div>
+      </div>
+    </div>
+    <hr class="hr" />
+    <div class="container col-xl-10 col-xxl-8 px-4 py-1">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <svg class="bi me-2" color="#ffc107" width="19em" height="19em"><use href="#award"></use></svg>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Credentials</small></h1>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><big>B.A. SUNY Albany, 1978</big></li>
+            <li class="list-group-item"><big>M.B.A. Hofstra, 1981</big></li>
+            <li class="list-group-item"><big>J.D. St. John's, 1984</big></li>
+            <li class="list-group-item"><big>M.Ed. Adelphi, 1997</big></li>
+            <li class="list-group-item"><big>Life Coach Training Institute, 2024</big></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="hr" />
+    <div class="container col-xl-10 col-xxl-8 px-4 py-1">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-8 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">About Me</h1>
+          <p class="col-lg-10 fs-5">My parents told me that when I was three years old, I walked around my block and got to know my neighbors. This began my lifelong interest in people. I have always been curious about why people act the way they do and how people decide the important issues in their lives. My family has always been very important to me. I was the eighth of nine kids. Growing up with a lot of siblings helped me to learn how to get along with a diverse group of people. Watching my siblings build and enjoy friendships gave me good examples of how to develop relationships outside the family. I realized at an early age that I got a great deal of joy from helping others. As a first grader, when I saw some older boys bullying my classmate, I successfully defended him. During my elementary school years, whenever it rained heavily, a nearby street flooded causing cars to stall. I enjoyed pushing them to higher ground where they could dry out and restart. These are just two early indicators of my lifelong love of helping people. The greatest experience of my life has been getting to know my bride! We've shared so many experiences including raising three fine kids. Being in a relationship with a strong, honest woman has helped me to be aware of and accept some of my imperfections. I think that being aware of and accepting my imperfections makes me less self-centered and more able to focus on helping others get what they want out of life. As a husband, father, lawyer, elementary school teacher and life coach, my skills as a good listener and my empathy and compassion have grown. So now, I am ready to help people to get more out of life - more happiness and fulfillment. If you are thinking about making a change and have hesitated, hesitate no more! Call me!</p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-4">
+          <img class="d-block mx-auto mb-4" src="image/mike-mountain.jpg" width="125%" height="125%" style="float: left">
+        </div>
+      </div>
+    </div>
+    <hr class="hr" />
+    <div class="container col-xl-10 col-xxl-8 px-4 py-1">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-4 text-center text-lg-start">
+          <img class="d-block mx-auto mb-4" src="image/mike-sunset.jpg" width="90%" height="90%" style="float: left">
+        </div>
+        <div class="col-md-10 mx-auto col-lg-7">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Life Coaching</h1>
+          <p class="col-lg-12 fs-5">I think that most people have ideas about changes they would like to make with their lives, but rarely get around to them. They live with the frustration of having the feeling that they could have done this or that BUT... (then they fill in one of the many reasons for not having made the change). This is where I can help. I will listen carefully to your ideas and help you to identify practical, manageable steps to implement the change. Then I will follow up to encourage completion. Lending a caring, supportive ear can be helpful in a wide variety of situations. Whether you are considering a job change, relocating, having relationship issues, wanting to improve your health or just looking for more happiness or peace of mind, I will help you weigh your options and make your ideas a reality.</p>
+        </div>
+      </div>
+    </div>
+    <hr class="hr" />
+    <div class="container col-xl-10 col-xxl-8 px-4 py-1">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-4 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Fee Schedule</h1>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><big>Free initial half-hour consultation</big></li>
+            <li class="list-group-item"><big>$50 per 40 minute session</big></li>
+            <li class="list-group-item"><big>$200 for 5 sessions</big></li>
+            <li class="list-group-item"><big>Payments made by Zelle</big></li>
+          </ul>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <svg class="bi me-2" color="#198754" width="19em" height="19em"><use href="#cash"></use></svg>
+        </div>
+      </div>
+    </div>
+    <div class="bg-light text-secondary px-4 py-5 text-center">
+      <div class="py-5">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Contact</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4"><svg class="bi me-2" width="1em" height="1em"><use href="#email"></use></svg><a href="mailto:mike@marrin-coach.life">mike@marrin-coach.life</a><br><svg class="bi me-2" width="1em" height="1em"><use href="#map"></use></svg>Rockville Centre, NY<br><svg class="bi me-2" width="1em" height="1em"><use href="#phone"></use></svg>(516) 554-3807</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
